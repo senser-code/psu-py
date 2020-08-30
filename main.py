@@ -11,7 +11,7 @@ for file in os.listdir("./scripts"):
     print(f'obfuscating {file}')
     if (os.path.isfile(file_path)):
         try:
-            script = obfuscator.obfuscate(utils.read_file(file_path))
+            script = obfuscator.obfuscate(utils.read_file(file_path), config.get("options"))
             utils.write_file(os.path.join(obfuscateddir, file), script)
             print(f'obfuscated {file}')
         except:
