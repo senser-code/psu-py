@@ -22,7 +22,7 @@ class obfuscator:
         }
 
         if options:
-            request_body["options"] = (" ").join(options)
+            request_body["options"] = (",").join(options)
 
         try:
             api_response = requests.post("https://psu.dev/postapi", json=request_body)

@@ -1,3 +1,4 @@
 {
-    "key": "apikeyhere"
+    "key": "apikeyhere",
+    "options": ["EncryptAllStrings"]
 }
